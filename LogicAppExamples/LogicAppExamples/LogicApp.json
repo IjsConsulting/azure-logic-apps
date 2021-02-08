@@ -100,7 +100,7 @@
                 }
               },
               "runAfter": {
-                "Increment_variable": [
+                "Set_variable": [
                   "Succeeded"
                 ]
               }
@@ -122,11 +122,11 @@
                 ]
               }
             },
-            "Increment_variable": {
-              "type": "IncrementVariable",
+            "Set_variable": {
+              "type": "SetVariable",
               "inputs": {
                 "name": "y",
-                "value": "x + y"
+                "value": "int(body('Parse_JSON')?['x']) + int(body('Parse_JSON')?['y'])"
               },
               "runAfter": {
                 "Initialize_variable": [
