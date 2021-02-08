@@ -96,7 +96,7 @@
               "inputs": {
                 "statusCode": 200,
                 "body": {
-                  "result": "@variables('y')"
+                  "result": "@variables('z')"
                 }
               },
               "runAfter": {
@@ -110,7 +110,7 @@
               "inputs": {
                 "variables": [
                   {
-                    "name": "y",
+                    "name": "z",
                     "type": "integer",
                     "value": 0
                   }
@@ -125,7 +125,7 @@
             "Set_variable": {
               "type": "SetVariable",
               "inputs": {
-                "name": "y",
+                "name": "z",
                 "value": "@add(body('Parse_JSON')?['x'],body('Parse_JSON')?['y'])"
               },
               "runAfter": {
