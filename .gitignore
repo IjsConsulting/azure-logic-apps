@@ -3,3 +3,8 @@
 ################################################################################
 
 /.vs/logic-apps/v16
+/.vs
+/LogicAppExamples/.vs/LogicAppExamples/v16
+/LogicAppExamples/LogicAppExamples/obj/Debug
+/LogicAppExamples/.vs/LogicAppExamples
+/LogicAppExamples/LogicAppExamples/bin/Debug/staging/LogicAppExamples
