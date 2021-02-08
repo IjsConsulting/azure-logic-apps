@@ -126,7 +126,7 @@
               "type": "SetVariable",
               "inputs": {
                 "name": "y",
-                "value": "int(body('Parse_JSON')?['x']) + int(body('Parse_JSON')?['y'])"
+                "value": "@add(body('Parse_JSON')?['x'],body('Parse_JSON')?['y'])"
               },
               "runAfter": {
                 "Initialize_variable": [
